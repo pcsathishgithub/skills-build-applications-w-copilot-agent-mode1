@@ -13,7 +13,10 @@ export function getCollectionItems(payload) {
 }
 
 export async function fetchCollection(collection) {
-  const response = await fetch(`${apiBaseUrl}/api/${collection}/`)
+  const url = collection.startsWith('http')
+    ? collection
+    : `${apiBaseUrl}/api/${collection}/`
+  const response = await fetch(url)
   if (!response.ok) {
     throw new Error(`Unable to load ${collection} (${response.status})`)
   }

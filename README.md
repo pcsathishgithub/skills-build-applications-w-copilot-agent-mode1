@@ -19,3 +19,13 @@ Remember, it's self-paced so feel free to take a break! ☕️
 - Connected the API routes to MongoDB and verified `/api/users` and `/api/activities` with `curl`.
 - Confirmed the TypeScript backend build and runtime API checks pass.
 
+### Frontend Endpoint Checks
+
+All requested React components include their expected API endpoint paths:
+
+- `Activities.jsx` -> `/api/activities/`
+- `Leaderboard.jsx` -> `/api/leaderboard/`
+- `Teams.jsx` -> `/api/teams/`
+- `Users.jsx` -> `/api/users/`
+- `Workouts.jsx` -> `/api/workouts/`
+
